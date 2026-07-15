@@ -1,0 +1,71 @@
+.audience {
+  background: var(--white);
+}
+
+.audience h2 {
+  font-size: clamp(1.7rem, 3.2vw, 2.3rem);
+  margin-top: 14px;
+  max-width: 24ch;
+}
+
+.audience-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+@media (max-width: 860px) {
+  .audience-grid { grid-template-columns: 1fr; }
+}
+
+.audience-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  background: var(--sky);
+  border: 1px solid var(--sky-deep);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.audience-card:hover,
+.audience-card:focus-visible {
+  transform: translateY(-4px);
+  background: var(--white);
+  box-shadow: 0 20px 34px -20px rgba(20, 96, 126, 0.45);
+}
+
+.audience-icon {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  background: var(--white);
+  border-radius: 16px;
+}
+
+.audience-card h3 {
+  font-size: 1.18rem;
+  color: var(--ocean-deep);
+}
+.audience-card p {
+  color: var(--ink);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+.audience-link {
+  margin-top: auto;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--coral-deep);
+}
+
+.audience-footer {
+  margin-top: 34px;
+  font-size: 1.02rem;
+}
+.inline-link {
+  color: var(--coral-deep);
+  font-weight: 600;
+}

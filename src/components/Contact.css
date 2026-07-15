@@ -1,0 +1,73 @@
+.contact {
+  background: var(--white);
+}
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .contact-inner { grid-template-columns: 1fr; }
+}
+
+.contact-copy h2 {
+  font-size: clamp(1.8rem, 3.4vw, 2.4rem);
+  margin-top: 14px;
+}
+.contact-copy p {
+  display: block;
+  margin: 16px 0 26px;
+  max-width: 50ch;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.newsletter-card {
+  background: var(--sky);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+}
+.newsletter-card h3 {
+  font-size: 1.2rem;
+}
+.newsletter-card p {
+  margin-top: 8px;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.newsletter-row {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.newsletter-input {
+  flex: 1;
+  min-width: 180px;
+  padding: 13px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--sky-deep);
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+}
+.newsletter-input:focus-visible {
+  outline: 3px solid var(--ocean-deep);
+  outline-offset: 2px;
+}
+
+.newsletter-success {
+  margin-top: 18px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--meadow);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
